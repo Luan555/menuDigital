@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot dogs</title>
+    <link rel="stylesheet" href="../Estilo/estilo1.css">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header'
+                'sidebar content content'
+                'footer footer footer';
+            grid-template-rows: 100px 1fr 50px;
+            grid-template-columns: 200px 1fr 1fr;
+            gap: 10px;
+            height: 100vh;
+        }
+        .header{
+            grid-area: header;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="../Fotos/logo1.png" alt="" id="logo">
+    </header>
+    <section>
+        <nav id="navBarCategorias">
+            <button class="boton_categorias categorias2" id="catH">
+                <span class="text-background">HAMBURGUESAS</span>
+            </button>
+            <button class="boton_categorias categorias2 ubicacionA" id="catHD">
+                <span class="text-background">HOT DOGS</span>
+            </button>
+            <button class="boton_categorias categorias2" id="catCT">
+                <span class="text-background">CARNES Y TACOS</span>
+            </button>
+            <button class="boton_categorias categorias2" id="catA">
+                <span class="text-background">ALITAS</span>
+            </button>
+            <button class="boton_categorias categorias2" id="catE">
+                <span class="text-background categorias2">ENCHILADAS</span>
+            </button>
+            <button class="boton_categorias categorias2" id="catT">
+                <span class="text-background">TORTAS</span>
+            </button>
+            <button class="boton_categorias categorias2" id="catS">
+                <span class="text-background">SINCRONIZADAS</span>
+            </button>
+            <button class="boton_categorias categorias2" id="catB">
+                <span class="text-background">BEBIDAS</span>
+            </button>
+        </nav>
+        <section class="menu2">
+            <div class="producto">
+                <img src="../Fotos/hamburguesa1.png" alt="" class="fotoProducto">
+                <h4 class="titProducto">HOT DOG SENCILLO</h4>
+                <div class="descProducto">
+                    <p>(120 gr. de carne, jitomate, cebolla morada, aguacate, lechuga italiana, queso amarillo)</p>
+                </div>
+                <div class="divPro">
+                    <p class="precioProducto"><b>$60.00</b></p>
+                    <button class="botonAgregar">Agregar al pedido</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="../Fotos/hamburguesa2.png" alt="" class="fotoProducto">
+                <h4 class="titProducto">HAMBURGUESA CON TOCINO</h4>
+                <div class="descProducto">
+                    <p>(120 gr. de carne, 40 gr. de tocino, jitomate, cebolla morada, aguacate, lechuga italiana, queso amarillo)</p>
+                </div>
+                <div class="divPro">
+                    <p class="precioProducto"><b>$80.00</b></p>
+                    <button class="botonAgregar">Agregar al pedido</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="../Fotos/hamburguesa3.jpg" alt="" class="fotoProducto">
+                <h4 class="titProducto">HAMBURGUESA DOBLE</h4>
+                <div class="descProducto">
+                    <p>(240 gr. de carne, jitomate, cebolla morada, aguacate, lechuga italiana, queso amarillo)</p>
+                </div>
+                <div class="divPro">
+                    <p class="precioProducto"><b>$90.00</b></p>
+                    <button class="botonAgregar">Agregar al pedido</button>
+                </div>
+            </div>
+
+        </section>
+        <div id="pedido">
+            <h2 id="ordenh1">PEDIDO</h2>
+            <div id="listPedido">
+                
+            </div>
+            <button class="botonAgregar" id="botonPedido">Realizar pedido</button>
+        </div>
+    </section>
+</body>
+</html>

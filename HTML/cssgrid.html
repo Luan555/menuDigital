@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de CSS Grid - Layout Básico</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header'
+                'sidebar content content'
+                'footer footer footer';
+            grid-template-rows: 100px 1fr 50px;
+            grid-template-columns: 200px 1fr 1fr;
+            gap: 10px;
+            height: 100vh;
+        }
+        
+        .header {
+            grid-area: header;
+            background-color: #ff6f61;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #6b8e23;
+        }
+
+        .content {
+            grid-area: content;
+            background-color: #f4a460;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #4682b4;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">Cabecera</div>
+        <div class="sidebar">Barra Lateral</div>
+        <div class="content">Contenido Principal</div>
+        <div class="footer">Pie de Página</div>
+    </div>
+</body>
+</html>

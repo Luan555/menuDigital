@@ -1,1 +1,2 @@
 ejercicio para practicar el comando git diff
+ediciooon2 ejercicio diff

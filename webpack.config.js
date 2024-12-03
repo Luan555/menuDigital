@@ -1,4 +1,5 @@
 const path = require('path');
+//const db = require('db');
 
 module.exports = {
   entry: './src/index.js',  // Punto de entrada
